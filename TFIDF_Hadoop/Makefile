@@ -33,6 +33,7 @@ tfidf3: tfidf3.jar
 	hadoop com.sun.tools.javac.Main $<
 	jar cf $@ $(basename $<)*.class
 
+
 clean:
 	rm -f *.class *.jar
 	hdfs dfs -rm -r -f $(DIR)
